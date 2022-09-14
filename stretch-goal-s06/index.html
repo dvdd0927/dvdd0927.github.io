@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Activity: CSS Introduction</title>
+
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+        <style type="text/css">
+            #internal{
+                color: orange;
+            }
+        </style>
+    </head>
+    <body>
+
+<!-- 1. In the s06 folder, create an activity folder and an index.html file -->
+
+        <!-- Different ways to include CSS -->
+<!-- 2. Add inline styling to a paragraph tag: change the font color to red -->
+        <p style="color: red;">Apply inline styling here.</p>
+<!-- 3. Apply an internal styling to p tag: named the id attribute to "internal" and change the font color into orange  -->
+        <p id="internal">Apply internal styling here.</p>
+
+<!-- 4. Create an index.css file -->
+
+<!-- 5. Apply an external styling to p tag: named the id attribute to "external" and change the font color into yellow -->
+        <p id="external">Apply external styling here.</p>
+
+
+ <!-- 6. Change the font-family to 'Verdana' and 20px font size to all elements using the universal selector.  -->
+ <!-- 7. Change the font-size of h1 tags using a type selector into 3rem -->
+ <!-- 8. Change the text to all uppercase letters for h2 tags using an id selector -->
+
+
+
+        <!-- CSS Selectors -->
+        <h1>CSS Introduction Activity</h1>
+
+        <h2 id="first_sub_heading_h2">The following are things you will learn in this bootcamp:</h2>
+
+
+ <!-- 9. Change the background colors of the languages to be learn list items using a class selectors. Change it to green or #aed19d -->
+        <h3>Languages to be Learned</h3>
+        <ol>
+            <li class="language-list-item">Hypertext Markup Language</li>
+            <li class="language-list-item">Cascading Style Sheet</li>
+            <li class="language-list-item">JavaScript</li>
+        </ol>
+
+
+ <!-- 10. Change the border of the tools to be used list items using an attribute selectors. Change it to blue or rgb(157, 176, 209)-->
+        <h3>Tools to be Used</h3>
+        <ol>
+            <li style="">Sublime Text</li>
+            <li style="">Postman</li>
+            <li style="">Heroku</li>
+            <li style="">GitLab</li>
+        </ol>
+
+        <!-- Combinator Selectors -->
+        <section>
+
+ <!-- 11. Change the list style type of the other things to be learned list using an adjacent sibling selector. -->
+<!-- 12. Change the dimensions of the image tag using a descendant selector. -->
+            <h4>Other Things to be Learned</h4>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png">
+
+ <!-- 13. Change the letter spacing of the other things to be learned list items using a child selector. 10px letter spacing -->
+            <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>React.js</li>
+                <li>MongoDB</li>
+            </ul>
+
+ <!-- 14. Change the alignment of the last paragraph using a generic sibling selector into center. -->
+            <p>Web development is a continuous process. Never stop learning and always look for ways to innovate.</p>
+        </section>
+<!-- 15. Create a git repository named s06-A to gitlab and github -->
+<!-- 16. Go to the github > settings > Pages and copy the link hosted project -->
+<!-- 17. Copy the link and paste it to Boodle named CSS - Introduction and CSS Selectors -->
+    </body>
+</html>

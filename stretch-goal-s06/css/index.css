@@ -1,0 +1,42 @@
+*{
+	font-family: "Verdana", monospace;
+	font-size: 20px;
+}
+
+#external{
+	color: yellow;
+}
+
+h1{
+	font-size: 3rem;
+}
+
+#first_sub_heading_h2{
+	text-transform: uppercase;
+}
+
+.language-list-item{
+	background-color: #aed19d;
+}
+
+li[style]{
+	border: 1px solid rgb(157, 176, 209);
+}
+
+img + ul{
+	list-style-type: none;
+}
+
+section img{
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+}
+
+section > ul > li {
+	letter-spacing: 10px;
+}
+
+h4 ~ p {
+	text-align: center;
+}
