@@ -24,6 +24,12 @@ function login() {
 				break;
 			case "student":
 				alert("Welcome to the class portal, student!");
+				let grade1 = parseInt(prompt("Enter 1st Grading Period"));
+				let grade2 = parseInt(prompt("Enter 2nd Grading Period"));
+				let grade3 = parseInt(prompt("Enter 3rd Grading Period"));
+				let grade4 = parseInt(prompt("Enter 4th Grading Period"));
+
+				checkAverage(grade1, grade2, grade3, grade4);
 				break;
 			default:
 				alert("Role out of range");
@@ -34,35 +40,26 @@ function login() {
 
 login();
 
-if(role === "student"){
-	let grade1 = parseInt(prompt("Enter 1st Grading Period"));
-	let grade2 = parseInt(prompt("Enter 2nd Grading Period"));
-	let grade3 = parseInt(prompt("Enter 3rd Grading Period"));
-	let grade4 = parseInt(prompt("Enter 4th Grading Period"));
-
-	checkAverage(grade1, grade2, grade3, grade4);
-}
-
 function checkAverage(grade1, grade2, grade3, grade4) {
-	let average = calculateAverage();
+	const average = function() {
+		let variable = Math.round((grade1 + grade2 + grade3 + grade4) / 4);
+		return variable;
+	};
 
-	average = Math.round(average);
+	let resultAverage = average();
 
-	if(average <= 74){
-		console.log("Hello, student, your average is "+ average +". The letter equivalent is F");
-	}else if(average >= 75 && average <= 79){
-		console.log("Hello, student, your average is "+ average +". The letter equivalent is D");		
-	}else if(average >= 80 && average <= 84){
-		console.log("Hello, student, your average is "+ average +". The letter equivalent is C");		
-	}else if(average >= 85 && average <= 89){
-		console.log("Hello, student, your average is "+ average +". The letter equivalent is B");		
-	}else if(average >= 90 && average <= 95){
-		console.log("Hello, student, your average is "+ average +". The letter equivalent is A");		
-	}else if(average >= 96){
-		console.log("Hello, student, your average is "+ average +". The letter equivalent is A+");		
+	if(resultAverage <= 74){
+		console.log("Hello, student, your average is "+ resultAverage +". The letter equivalent is F");
+	}else if(resultAverage >= 75 && resultAverage <= 79){
+		console.log("Hello, student, your average is "+ resultAverage +". The letter equivalent is D");		
+	}else if(resultAverage >= 80 && resultAverage <= 84){
+		console.log("Hello, student, your average is "+ resultAverage +". The letter equivalent is C");		
+	}else if(resultAverage >= 85 && resultAverage <= 89){
+		console.log("Hello, student, your average is "+ resultAverage +". The letter equivalent is B");		
+	}else if(resultAverage >= 90 && resultAverage <= 95){
+		console.log("Hello, student, your average is "+ resultAverage +". The letter equivalent is A");		
+	}else if(resultAverage >= 96){
+		console.log("Hello, student, your average is "+ resultAverage +". The letter equivalent is A+");		
 	}
 
-	function calculateAverage() {
-		return (grade1 + grade2 + grade3 + grade4) / 4;
-	}
 }
