@@ -3,7 +3,7 @@ let username, password, role;
 function login() {
 	username = prompt("Enter your username");
 	password = prompt("Enter your password");
-	role = prompt("Enter your role");
+	role = prompt("Enter your role").toLowerCase();
 
 	if (
 		username === "" ||
@@ -22,7 +22,7 @@ function login() {
 			case "teacher":
 				alert("Thank you for logging in, teacher!");
 				break;
-			case "admin":
+			case "student":
 				alert("Welcome to the class portal, student!");
 				break;
 			default:
@@ -30,6 +30,17 @@ function login() {
 				break;
 		}
 	}
+}
+
+login();
+
+if(role === "student"){
+	let grade1 = parseInt(prompt("Enter 1st Grading Period"));
+	let grade2 = parseInt(prompt("Enter 2nd Grading Period"));
+	let grade3 = parseInt(prompt("Enter 3rd Grading Period"));
+	let grade4 = parseInt(prompt("Enter 4th Grading Period"));
+
+	checkAverage(grade1, grade2, grade3, grade4);
 }
 
 function checkAverage(grade1, grade2, grade3, grade4) {
